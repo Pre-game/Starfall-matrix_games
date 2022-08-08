@@ -1,0 +1,120 @@
+[gd_scene format=2]
+
+[node name="prototype" type="Spatial"]
+
+[node name="CSGCombiner" type="CSGCombiner" parent="."]
+
+[node name="Floor" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -187.769, 0.576653, 0.693037 )
+width = 510.699
+depth = 46.1858
+
+[node name="Floor2" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.3146, 0, 0 )
+width = 20.0
+height = 50.0
+depth = 20.0
+
+[node name="CSGPolygon" type="CSGPolygon" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 7.65425, 37.3539, 22.9991, 4.25367 )
+polygon = PoolVector2Array( 2, 2, -2.38449, 0.521645, -4.1671, -23.576, 3.18403, -26.5089 )
+
+[node name="wall 2" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.85469, 0, -22.7857 )
+width = 97.6511
+height = 82.3271
+
+[node name="wall 1" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.85469, 0, 22.1478 )
+width = 97.6511
+height = 82.3271
+
+[node name="ceiling" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.855, 36, 0 )
+width = 102.851
+depth = 52.473
+
+[node name="CSGCylinder" type="CSGCylinder" parent="CSGCombiner"]
+transform = Transform( 0.760531, 0.649302, 0, -0.649302, 0.760531, 0, 0, 0, 1, 15.4496, 42, 0 )
+operation = 2
+radius = 12.4536
+height = 46.8108
+
+[node name="CSGBox" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 19.758, 0 )
+height = 62.6019
+depth = 50.875
+
+[node name="CSGBox2" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 14.3736, 0 )
+operation = 2
+width = 7.71266
+height = 25.5087
+depth = 22.8171
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.3065, 22.0839, 0 )
+
+[node name="Entry" type="Spatial" parent="Spatial"]
+
+[node name="platform 1" type="CSGBox" parent="Spatial/Entry"]
+width = 4.0
+height = 0.296058
+depth = 3.99047
+
+[node name="platform 2" type="CSGBox" parent="Spatial/Entry"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.27384, 6.99693 )
+width = 4.0
+height = 0.296058
+depth = 3.64965
+
+[node name="platform 3" type="CSGBox" parent="Spatial/Entry"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.61419, -5.89159, 2.20825 )
+width = 4.0
+height = 0.296058
+depth = 3.64965
+
+[node name="platform 4" type="CSGBox" parent="Spatial/Entry"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.61419, -8.76807, 7.04289 )
+width = 4.0
+height = 0.296058
+depth = 3.64965
+
+[node name="Platform step down" type="CSGCombiner" parent="Spatial/Entry"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30.3065, -22.0839, 0 )
+
+[node name="CSGBox" type="CSGBox" parent="Spatial/Entry/Platform step down"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 4 )
+width = 6.0
+height = 22.0
+depth = 8.0
+
+[node name="CSGBox2" type="CSGBox" parent="Spatial/Entry/Platform step down"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.722, -4.23738, 4 )
+width = 6.0
+height = 22.0
+depth = 8.0
+
+[node name="CSGBox3" type="CSGBox" parent="Spatial/Entry/Platform step down"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9091, -6.64886, 10.4867 )
+width = 6.0
+height = 22.0
+depth = 8.0
+
+[node name="CSGCombiner2" type="CSGCombiner" parent="."]
+
+[node name="CSGBox" type="CSGBox" parent="CSGCombiner2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -66.5192, 21, -14 )
+width = 60.4846
+height = 43.8043
+
+[node name="CSGBox4" type="CSGBox" parent="CSGCombiner2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -66.5192, 21, 16.6019 )
+width = 60.4846
+height = 43.8043
+
+[node name="CSGBox3" type="CSGBox" parent="CSGCombiner2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -105.836, 24.9852, -0.80397 )
+width = 123.333
+height = 5.19577
+depth = 45.6529
